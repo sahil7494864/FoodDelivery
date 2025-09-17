@@ -1,98 +1,37 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import React from "react";
+ 
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import LoginSwiggy from "@/components/swiggy project/LoginSwiggy";
+import Main_data1 from "@/components/swiggy project/Main_data1";
+ 
+import Login from "@/components/loginProject/login";
+import OrderSwiggy from "@/components/swiggy project/OrderSwigggy";
+import Orderpage from "@/components/swiggy project/Orderpage";
+import Railway from "@/components/swiggy project/Railway";
+import AddLocation from "@/components/swiggy project/AddLocation";
+import Tempfile from "@/components/swiggy project/Tempfile";
+import Payment from "@/components/swiggy project/Payment";
 
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
-
+import OfferPage from "@/components/swiggy project/Offerpage";
+const Stack = createNativeStackNavigator();
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
+    <Stack.Navigator screenOptions={{headerShown:false}} >
+      
+      <Stack.Screen name="Home" component={Main_data1}/>
+      <Stack.Screen name="AddLocation" component={AddLocation} options={{headerShown:true,title:'Enter your area or apartment name',headerTitleStyle:{fontSize:18,},}}/>
+      <Stack.Screen name="Order Record" component={OrderSwiggy}/>
+      <Stack.Screen name="Orderpage" component={Orderpage}/>
+      <Stack.Screen name="Tempfile" component={Tempfile} options={{headerShown:true,title:'Order Summary',headerTitleStyle:{
+      fontSize:18,fontWeight:'bold'},}}/>
+      <Stack.Screen name="Payment" component={Payment} options={{headerShown:true,title:'Payment Options',headerTitleStyle:{
+      fontSize:18,fontWeight:'bold'},}}/>
+      <Stack.Screen name="offerpage" component={OfferPage}/>
+      <Stack.Screen name="Railway" component={Railway}/>
+      <Stack.Screen name="Login/Sign up" component={LoginSwiggy} />
+      <Stack.Screen name='Registration'   component={Login}/>
+       
 
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
-  );
-}
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-});
+       
+    </Stack.Navigator>
+  );} 
