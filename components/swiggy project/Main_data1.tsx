@@ -313,6 +313,7 @@ function Main_data1() {
             renderItem={dishvaritydata}
             horizontal={true}
             showsHorizontalScrollIndicator={false}
+            nestedScrollEnabled={true}
           />
         </View>
 
@@ -333,6 +334,7 @@ function Main_data1() {
             renderItem={dishvaritylist2}
             horizontal={true}
             showsHorizontalScrollIndicator={false}
+              nestedScrollEnabled={true}
           />
         </View>
 
@@ -353,6 +355,7 @@ function Main_data1() {
             renderItem={dishvaritylist2}
             horizontal={true}
             showsHorizontalScrollIndicator={false}
+              nestedScrollEnabled={true}
           />
         </View>
 
@@ -362,6 +365,7 @@ function Main_data1() {
           renderItem={dishvaritylist4}
           horizontal={true}
           showsHorizontalScrollIndicator={false}
+            nestedScrollEnabled={true}
         />
 
         <View style={styles.boxlist1}>
@@ -370,6 +374,7 @@ function Main_data1() {
             renderItem={dishvaritydata5}
             horizontal={true}
             showsHorizontalScrollIndicator={false}
+              nestedScrollEnabled={true}
           />
         </View>
   
@@ -377,6 +382,7 @@ function Main_data1() {
           data={dishvarity}
           renderItem={dishvaritylist3}
           showsVerticalScrollIndicator={false}
+            nestedScrollEnabled={true}
         />
       </ScrollView>
 
