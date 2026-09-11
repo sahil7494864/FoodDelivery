@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+Food Delivery App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A food delivery mobile application built using React Native and Expo.
 
-## Get started
+Features :
 
-1. Install dependencies
+Food listing
+Food categories
+Food details
+Add food to cart
+Place orders
+API integration
+Navigation between screens
+Dynamic food data
+Responsive UI
 
-   ```bash
-   npm install
-   ```
+Tech Stack :
 
-2. Start the app
+React Native
+Expo
+JavaScript
+React Navigation
+FlatList
+REST API
+Git & GitHub
 
-   ```bash
-   npx expo start
-   ```
+Project Structure :
 
-In the output, you'll find options to open the app in a
+app - Application screens
+components - Reusable components
+constants - App constants and data
+hooks - Custom hooks
+assets - Images and other assets
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Run the Project 
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Clone the repository:
+git clone https://github.com/sahil7494864/FoodDelivery.git
 
-## Get a fresh project
+Install dependencies:
+npm install
 
-When you're ready, run:
+Start the project:
+npx expo start
 
-```bash
-npm run reset-project
-```
+About
+I built this project to practice React Native development, API integration, navigation, and working with dynamic data.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Developer
+Sahil
