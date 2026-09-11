@@ -2,7 +2,7 @@
 
 A food delivery mobile application built using React Native and Expo.
 
-## Features :
+## Features 
 
 - Food listing
 
@@ -23,7 +23,7 @@ A food delivery mobile application built using React Native and Expo.
 - Responsive UI
 
 
-## Tech Stack :
+## Tech Stack
 
 - React Native
 
@@ -40,7 +40,7 @@ A food delivery mobile application built using React Native and Expo.
 - Git & GitHub
 
 
-## Project Structure :
+## Project Structure
 
 - app - Application screens
 
@@ -53,7 +53,7 @@ A food delivery mobile application built using React Native and Expo.
 - assets - Images and other assets
 
 
-# Run the Project :
+# Run the Project
 
 ### Clone the repository:
 
@@ -71,6 +71,6 @@ npx expo start
 
 I built this project to practice React Native development, API integration, navigation, and working with dynamic data.
 
-## Developer: 
+## Developer
 
 Sahil
